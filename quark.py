@@ -99,7 +99,7 @@ class QURAK:
                     # 打印结果
                     for item in first_three_items:
                         item_str = str(item)  # 将item转换为字符串
-                        if 'quark' in item_str and i <=5:
+                        if 'quark' in item_str and i <=10:
                             # 判断夸克资源是否失效
                             pwd_id, pdir_fid = self.get_id_from_url(item['url'])
                             is_sharing, stoken = self.get_stoken(pwd_id)
@@ -144,7 +144,7 @@ class QURAK:
                     # 打印结果
                     for item in first_three_items:
                         item_str = str(item)  # 将item转换为字符串
-                        if 'quark' in item_str and i <=5:
+                        if 'quark' in item_str and i <=10:
                             url = item['data_url'].split("链接：")[1]
                             title = item['title']
                             # 判断夸克资源是否失效
@@ -216,7 +216,7 @@ class QURAK:
                     # 打印结果
                     for item in first_three_items:
                         item_str = str(item)  # 将item转换为字符串
-                        if 'quark' in item_str and i <= 5:
+                        if 'quark' in item_str and i <= 10:
                             url = item['url'].replace("?entry=funletu", "", 1)
                             title = item['title']
                             # 判断夸克资源是否失效
@@ -281,7 +281,7 @@ class QURAK:
                     # 打印结果
                     for item in first_three_items:
                         item_str = str(item)  # 将item转换为字符串
-                        if 'quark' in item_str and i <= 5:
+                        if 'quark' in item_str and i <= 10:
                             title = item['disk_name'].replace("<em>", "", 1).replace("</em>", "", 1)
                             url = item['link']
                             # 判断夸克资源是否失效
@@ -329,7 +329,7 @@ class QURAK:
                     # 打印结果
                     for item in first_three_items:
                         item_str = str(item)  # 将item转换为字符串
-                        if i <= 5:
+                        if i <= 10:
                             title = item['title']
                             url = 'https://pan.quark.cn/s/' + item['shareUrl']
                             # 判断夸克资源是否失效
