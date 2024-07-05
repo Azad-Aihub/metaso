@@ -55,7 +55,12 @@ class METASO(Plugin):
                     'get_qry_external_2',
                     'get_qry_external_3',
                     'get_qry_external_4',
-                    'get_qry_external_5'
+                    'get_qry_external_5',
+                    'get_qry_external_6',
+                    'get_qry_external_7',
+                    'get_qry_external_8',
+                    'get_qry_external_9',
+                    'get_qry_external_10'
                 ]
             ]
 
@@ -70,7 +75,7 @@ class METASO(Plugin):
             future_data = future.result()
             if future_data is not None:
                 for item in future_data:
-                    if i > 5:
+                    if i > 10:
                         break
                     url = item['url']
                     if url not in seen_url:
