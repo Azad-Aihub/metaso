@@ -43,7 +43,7 @@ class METASO(Plugin):
             return None
 
         logging.info('查询关键字:' + qry_key)
-        msg = '【' + qry_key + '】外部资源搜索结果：\n'
+        msg = '【' + qry_key + '】夸克资源搜索结果：\n'
         start_time = time.time()
 
         with ThreadPoolExecutor() as executor:
@@ -97,7 +97,7 @@ class METASO(Plugin):
         content = e_context["context"].content.strip()
         logger.debug("[metaso] on_handle_context. content: %s" % content)
 
-        if content.startswith("外部搜索"):
+        if content.startswith("夸克搜索"):
             keyword = content[4:].strip()  # 提取关键词后面的文字
             search_result = self.merge_qry_data(keyword)
             reply_type = ReplyType.TEXT
